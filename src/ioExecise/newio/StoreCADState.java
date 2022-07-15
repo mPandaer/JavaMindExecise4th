@@ -154,9 +154,9 @@ public class StoreCADState {
 //        Square.serializeStaticState(out);
 //        Line.serializeStaticState(out);
         //为什么和顺序有关
-        serializeStaticState(out);
-        out.writeObject(shapes);
 
+        out.writeObject(shapes);
+        serializeStaticState(out);
 
         // Display the shapes:
         System.out.println(shapes);

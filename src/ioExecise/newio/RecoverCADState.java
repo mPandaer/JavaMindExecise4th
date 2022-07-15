@@ -2,6 +2,8 @@ package ioExecise.newio;//: io/RecoverCADState.java
 // Restoring the state of the pretend CAD system.
 // {RunFirst: StoreCADState}
 
+
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -25,9 +27,9 @@ public class RecoverCADState {
 //    Circle.deserializeStaticState(in);
 //    Square.deserializeStaticState(in);
 //    Line.deserializeStaticState(in);
-    deserializeStaticState(in);
-    List<Shape> shapes = (List<Shape>)in.readObject();
 
+    List<Shape> shapes = (List<Shape>)in.readObject();
+    deserializeStaticState(in);
 
 
     System.out.println(shapes);
